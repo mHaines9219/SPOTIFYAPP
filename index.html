@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>welcome :)</h1>
+    <h2>IndiFindr is a new way to discover independent artists that filters out artists signed to major labels, and below 1,000 monthly listeners</h2>
+    <h3>First, tell us what type of music you're in the mood for</h3>
+    <form id="search-form">
+        <p>Artist Discovery Engine</p>
+        <input type="text" id="genre-input" placeholder="GENRE">
+        <input type="text" id="city-input" placeholder="CITY">
+        <input type="text" id="follower-input" placeholder="FOLLOWER COUNT">
+        <button type="submit" id="submit">Search</button>
+      </form>
+
+
+
+
+
+    <script>
+        const genreInput = document.getElementById('genre-input');
+        const cityInput = document.getElementById('city-input');
+        const followerInput = document.getElementById('follower-input');
+
+const searchForm = document.getElementById('search-form');
+
+// Add an event listener to the form's submit event
+searchForm.addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent the form from submitting
+
+  // Get the value from the input field
+  const genre = genreInput.value;
+  const city = cityInput.value;
+  const follower = followerInput.value;
+
+  // Now you can use the "genre" value for your search or other actions
+  console.log('Selected genre:', genre);
+  console.log('Selected city:', city);
+  console.log('Selected follower count:', follower);
+});
+
+
+    </script>
+</body>
+</html>
+

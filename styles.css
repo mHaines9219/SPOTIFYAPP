@@ -1,0 +1,51 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poiret+One&display=swap');
+
+
+
+
+body{
+    background-color: darkcyan;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    width:200px;
+}
+#search-form{
+    border-style: inset;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Poiret One', cursive;
+    font-weight: bolder;
+    align-items: center;
+    color:white;
+    padding:10px;
+    background-color:darkgrey;
+
+}
+
+button{
+font-family: 'Bebas Neue', sans-serif;
+margin:10px;
+text-align:  center;
+color:white;
+border-radius: 10px;
+background-color: darkcyan;
+}
+
+::placeholder{
+    color:darkgrey;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+
+}
+
+
+
+
